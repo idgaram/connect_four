@@ -1,0 +1,7 @@
+.bg {
+  min-height: 100%;
+  /* margin-top: 3rem; */
+  background-color: #7945ff;
+  display: flex;
+  justify-content: center;
+}
