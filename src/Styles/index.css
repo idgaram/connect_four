@@ -13,6 +13,11 @@
   --purple-h2: #7945ff;
   --pink: #fd6687;
   --gray-paragraph: #565656;
+  --font-heading-l: bold 56px/71px "Space Grotesk", sans-serif;
+  --font-heading-m: bold 24px/31px "Space Grotesk", sans-serif;
+  --font-heading-s: bold 20px/26px "Space Grotesk", sans-serif;
+  --font-heading-xs: bold 16px/21px "Space Grotesk", sans-serif;
+  --font-p: medium 16px/21px "Space Grotesk", sans-serif;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

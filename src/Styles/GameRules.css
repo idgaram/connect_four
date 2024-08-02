@@ -14,23 +14,31 @@
   h1 {
     text-align: center;
     margin: 3rem 0;
-    font-size: 3.5rem;
+    font: var(--font-heading-l);
   }
   h2 {
     margin: 1rem 0;
+    font: var(--font-heading-s);
     color: var(--purple-h2);
+  }
+  ol {
+    list-style: decimal;
+    padding: 0 1rem;
   }
   p {
     margin-bottom: 2rem;
   }
   p,
   li {
-    font-size: 1rem;
-    color: var(--gray-paragraph);
-    font-weight: 500;
+    font: var(--font-p);
   }
   li {
     margin: 0.8rem 0;
+    counter-increment: rules-counter;
+  }
+  ol > li::marker {
+    font-weight: bold;
+    content: counter(rules-counter) "  ";
   }
 
   .button-container {

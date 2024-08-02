@@ -1,0 +1,96 @@
+.pvp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.relative-game-grid {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .small-white-grid {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 3;
+  }
+  .small-black-grid {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 1;
+    /* bottom: 0; */
+  }
+  margin-top: 70%;
+  button {
+    z-index: 2;
+    background: none;
+    border-radius: 50%;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    img {
+      width: 2.5rem;
+    }
+  }
+  button:hover {
+    cursor: pointer;
+  }
+
+  .game-grid {
+    margin: 0;
+  }
+}
+
+.rectangle {
+  /* position: relative; */
+  width: 50vw;
+  height: 13vh;
+  background: #ffce67;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 3px black solid;
+  border-top: 0px;
+  border-radius: 1rem;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  padding: 1vh 0;
+
+  p {
+    font-size: 2.2vh;
+    font-weight: bold;
+  }
+}
+
+.player-turn-container {
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 191px;
+  height: 150px;
+  background-image: url("../assets/images/turn-background-yellow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  p {
+    margin-top: 23%;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    margin-top: 0.4rem;
+    /* font-size: 56px;
+    font-weight: bold; */
+    font: var(--font-heading-l);
+  }
+}

@@ -12,13 +12,19 @@
   }
 
   .main-menu-button {
-    display: flex;
-    flex-direction: row;
     border: black 4px solid;
     border-radius: 1rem;
     width: 100%;
 
     box-shadow: 0 0.6rem black;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 95%;
+    }
+
     p {
       align-self: center;
       padding: 1rem;
